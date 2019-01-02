@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/keyboard.css">
+    <link rel="stylesheet" href="css/styleSynth.css">
+
   </head>
   <body>
       <app>
@@ -16,8 +18,9 @@
       </div>
 
       <dam>
+        <left>
         <ctrl id="controlli">
-          <div id="midi_in">Midi In
+           <div id="midi_in">Midi In
            <div id="led" class="led_off"></div>
           </div>
 
@@ -38,95 +41,174 @@
 
 
         <keyboard>
-            <div style="display: flex; height: 120px;">
-    <li class="white" data-key="24"></li>
-    <li class="black" data-key="25"></li>
-    <li class="white" data-key="26"></li>
-    <li class="black" data-key="27"></li>
-    <li class="white" data-key="28"></li>
-    <li class="white" data-key="29"></li>
-    <li class="black" data-key="30"></li>
-    <li class="white" data-key="31"></li>
-    <li class="black" data-key="32"></li>
-    <li class="white" data-key="33"></li>
-    <li class="black" data-key="34"></li>
-    <li class="white" data-key="35"></li>
-    <li class="white" data-key="36"></li>
-    <li class="black" data-key="37"></li>
-    <li class="white" data-key="38"></li>
-    <li class="black" data-key="39"></li>
-    <li class="white" data-key="40"></li>
-    <li class="white" data-key="41"></li>
-    <li class="black" data-key="42"></li>
-    <li class="white" data-key="43"></li>
-    <li class="black" data-key="44"></li>
-    <li class="white" data-key="45"></li>
-    <li class="black" data-key="46"></li>
-    <li class="white" data-key="47"></li>
-    <li class="white" data-key="48"></li>
-    <li class="black" data-key="49"></li>
-    <li class="white" data-key="50"></li>
-    <li class="black" data-key="51"></li>
-    <li class="white" data-key="52"></li>
-    <li class="white" data-key="53"></li>
-    <li class="black" data-key="54"></li>
-    <li class="white" data-key="55"></li>
-    <li class="black" data-key="56"></li>
-    <li class="white" data-key="57"></li>
-    <li class="black" data-key="58"></li>
-    <li class="white" data-key="59"></li>
-    <li class="white" data-key="60"></li>
-    <li class="black" data-key="61"></li>
-    <li class="white" data-key="62"></li>
-    <li class="black" data-key="63"></li>
-    <li class="white" data-key="64"></li>
-    <li class="white" data-key="65"></li>
-    <li class="black" data-key="66"></li>
-    <li class="white" data-key="67"></li>
-    <li class="black" data-key="68"></li>
-    <li class="white" data-key="69"></li>
-    <li class="black" data-key="70"></li>
-    <li class="white" data-key="71"></li>
-    <li class="white" data-key="72"></li>
-    <li class="black" data-key="73"></li>
-    <li class="white" data-key="74"></li>
-    <li class="black" data-key="75"></li>
-    <li class="white" data-key="76"></li>
-    <li class="white" data-key="77"></li>
-    <li class="black" data-key="78"></li>
-    <li class="white" data-key="79"></li>
-    <li class="black" data-key="80"></li>
-    <li class="white" data-key="81"></li>
-    <li class="black" data-key="82"></li>
-    <li class="white" data-key="83"></li>
-    <li class="white" data-key="84"></li>
-    <li class="black" data-key="85"></li>
-    <li class="white" data-key="86"></li>
-    <li class="black" data-key="87"></li>
-    <li class="white" data-key="88"></li>
-    <li class="white" data-key="89"></li>
-    <li class="black" data-key="90"></li>
-    <li class="white" data-key="91"></li>
-    <li class="black" data-key="92"></li>
-    <li class="white" data-key="93"></li>
-    <li class="black" data-key="94"></li>
-    <li class="white" data-key="95"></li>
-    <li class="white" data-key="96"></li>
-    <li class="black" data-key="97"></li>
-    <li class="white" data-key="98"></li>
-    <li class="black" data-key="99"></li>
-    <li class="white" data-key="100"></li>
-    <li class="white" data-key="101"></li>
-    <li class="black" data-key="102"></li>
-    <li class="white" data-key="103"></li>
-    <li class="black" data-key="104"></li>
-    <li class="white" data-key="105"></li>
-    <li class="black" data-key="106"></li>
-    <li class="white" data-key="107"></li>
+    <div style="display: flex; height: 120px;">
+      <li class="white" data-key="24"></li>
+      <li class="black" data-key="25"></li>
+      <li class="white" data-key="26"></li>
+      <li class="black" data-key="27"></li>
+      <li class="white" data-key="28"></li>
+      <li class="white" data-key="29"></li>
+      <li class="black" data-key="30"></li>
+      <li class="white" data-key="31"></li>
+      <li class="black" data-key="32"></li>
+      <li class="white" data-key="33"></li>
+      <li class="black" data-key="34"></li>
+      <li class="white" data-key="35"></li>
+      <li class="white" data-key="36"></li>
+      <li class="black" data-key="37"></li>
+      <li class="white" data-key="38"></li>
+      <li class="black" data-key="39"></li>
+      <li class="white" data-key="40"></li>
+      <li class="white" data-key="41"></li>
+      <li class="black" data-key="42"></li>
+      <li class="white" data-key="43"></li>
+      <li class="black" data-key="44"></li>
+      <li class="white" data-key="45"></li>
+      <li class="black" data-key="46"></li>
+      <li class="white" data-key="47"></li>
+      <li class="white" data-key="48"></li>
+      <li class="black" data-key="49"></li>
+      <li class="white" data-key="50"></li>
+      <li class="black" data-key="51"></li>
+      <li class="white" data-key="52"></li>
+      <li class="white" data-key="53"></li>
+      <li class="black" data-key="54"></li>
+      <li class="white" data-key="55"></li>
+      <li class="black" data-key="56"></li>
+      <li class="white" data-key="57"></li>
+      <li class="black" data-key="58"></li>
+      <li class="white" data-key="59"></li>
+      <li class="white" data-key="60"></li>
+      <li class="black" data-key="61"></li>
+      <li class="white" data-key="62"></li>
+      <li class="black" data-key="63"></li>
+      <li class="white" data-key="64"></li>
+      <li class="white" data-key="65"></li>
+      <li class="black" data-key="66"></li>
+      <li class="white" data-key="67"></li>
+      <li class="black" data-key="68"></li>
+      <li class="white" data-key="69"></li>
+      <li class="black" data-key="70"></li>
+      <li class="white" data-key="71"></li>
+      <li class="white" data-key="72"></li>
+      <li class="black" data-key="73"></li>
+      <li class="white" data-key="74"></li>
+      <li class="black" data-key="75"></li>
+      <li class="white" data-key="76"></li>
+      <li class="white" data-key="77"></li>
+      <li class="black" data-key="78"></li>
+      <li class="white" data-key="79"></li>
+      <li class="black" data-key="80"></li>
+      <li class="white" data-key="81"></li>
+      <li class="black" data-key="82"></li>
+      <li class="white" data-key="83"></li>
+      <li class="white" data-key="84"></li>
+      <li class="black" data-key="85"></li>
+      <li class="white" data-key="86"></li>
+      <li class="black" data-key="87"></li>
+      <li class="white" data-key="88"></li>
+      <li class="white" data-key="89"></li>
+      <li class="black" data-key="90"></li>
+      <li class="white" data-key="91"></li>
+      <li class="black" data-key="92"></li>
+      <li class="white" data-key="93"></li>
+      <li class="black" data-key="94"></li>
+      <li class="white" data-key="95"></li>
+      <li class="white" data-key="96"></li>
+      <li class="black" data-key="97"></li>
+      <li class="white" data-key="98"></li>
+      <li class="black" data-key="99"></li>
+      <li class="white" data-key="100"></li>
+      <li class="white" data-key="101"></li>
+      <li class="black" data-key="102"></li>
+      <li class="white" data-key="103"></li>
+      <li class="black" data-key="104"></li>
+      <li class="white" data-key="105"></li>
+      <li class="black" data-key="106"></li>
+      <li class="white" data-key="107"></li>
 
-</div>
+    </div>
        </keyboard>
 
+</left>
+
+<synthCtrl>
+  <boxEffect id="box">
+      <span class="titleLabel" >Control Panel</span>
+  <div class="right">
+   <div>Waveform: </div>
+   <select name="waveform">
+     <option value="sine"selected>Sine</option>
+     <option value="square">Square</option>
+     <option value="sawtooth">Sawtooth</option>
+     <option value="triangle">Triangle</option>
+     <option value="custom">Custom</option>
+   </select>
+ </div>
+
+ <div class="right">
+     <div>Mod Waveform: </div>
+     <select name="modwaveform">
+       <option value="sine"selected>Sine</option>
+       <option value="square">Square</option>
+       <option value="sawtooth">Sawtooth</option>
+       <option value="triangle">Triangle</option>
+     </select>
+ </div>
+
+ <div style="display: inline-flex">
+   <div>
+ <fxparam>
+  <label>Modulation Frequency</label>
+  <input type="range" id="freqMod" min="50" max="300" step="1"></input>
+ </fxparam>
+
+ <fxparam class="mixRev">
+   <label>Reverb Amount</label>
+   <input class="slider" type="range" value="0" step="1" min="0.0" max="100" oninput="changeValue(this.value);"></input>
+ </fxparam>
+
+ <fxparam>
+  <label>Delay Time</label>
+  <input type="range" id="timeDelay" value = "0" min="0" max="1" step="0.01"></input>
+ </fxparam>
+
+ <fxparam>
+  <label>Delay Gain</label>
+  <input type="range" id="gDelay" value="0" min="0" max="1" step="0.01"></input>
+ </fxparam>
+
+ <fxparam>
+   <label>Drive</label>
+   <input type="range" value="0" step="1" min="0.0" max="100" oninput="changeDist(this.value);"></input>
+</fxparam>
+
+  <fxparam>
+    <label>distorsionCurve</label>
+    <input type="range" id="distortionCurve" value ="0" min="0" max="50" step="0.1"></input>
+  </fxparam>
+
+  <fxparam>
+    <label>Q Factor</label>
+    <input type="range" id="qFactor" value="40" min="0" max="300" step="1"></input>
+  </fxparam>
+
+  <fxparam>
+    <label>Cutoff Frequency</label>
+    <input type="range" id="cutOffFilter" min="7" max="10" step="0.1"></input>
+  </fxparam>
+</div>
+
+  <fxparam>
+    <label style="font-weight: bold">Master Volume</label>
+    <input type="range" id="masterGain" value=1 min="0" max="1" step="0.1"></input>
+  </fxparam>
+</div>
+</div>
+
+ </boxEffect>
+
+</synthCtrl>
 
         <bottom>
         Progetto di Jacopo, Nico e Ema
@@ -137,4 +219,6 @@
   </body>
   <script src="js/script.js"></script>
   <script src="js/vis.js"></script>
+  <script src="js/synth.js"></script>
+
 </html>
