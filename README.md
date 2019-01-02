@@ -11,6 +11,7 @@ Un controller midi bluetooth, basato su micro:bit, per il controllo di un sintet
 - Canvas
   - Canvas Background
   - Canvas Potato
+  
 **TO DO**
 - Canvas: 
   - Transition w/ d3 API
